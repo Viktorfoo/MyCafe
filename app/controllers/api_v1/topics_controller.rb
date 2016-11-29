@@ -1,6 +1,6 @@
 class ApiV1::TopicsController < ApiController
 
-  before_action :authenticate_user!, :only => [:create]
+  #before_action :authenticate_user!, :only => [:create]
 
   # GET /api/v1/topics/:id
   def show

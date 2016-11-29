@@ -56,8 +56,9 @@ group :development, :test do
   #  rails g rspec:install
   gem 'rspec-rails'
 end
+gem 'has_secure_token'
 
-gem 'mysql2'
+#gem 'mysql2'
 gem 'capistrano-rails', :group => :development
 gem 'capistrano-passenger', :group => :development
 

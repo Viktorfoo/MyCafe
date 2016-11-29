@@ -10,7 +10,10 @@
 <% topics.each do |t| %>
   <tr>
     <td><%= link_to t.title, topic_path(t) %></td>
-    <td><%= link_to t.user.display_name, user_path(t.user) %></td>
+    
+
+
+
     <td>
       <% t.tags.each do |i| %>
         <%= link_to i.name, topics_path( :tag => i.name ) %>

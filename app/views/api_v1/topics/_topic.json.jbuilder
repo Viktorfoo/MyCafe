@@ -2,9 +2,9 @@ json.id topic.id
 json.title topic.title
 json.content topic.content
 json.user do
-  json.id topic.user.id
-  json.display_name topic.user.display_name
-  json.email topic.user.email
+  json.id topic.user
+  json.display_name topic.user
+  json.email topic.user
 end
 json.views_count topic.views_count
 

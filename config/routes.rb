@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  get "/api/v1/coffeeshop/all" => "api_v1/coffeeshops#all"
+  post "/api/v1/coffeeshop/update" => "api_v1/coffeeshops#update"
+
   scope :path => '/api/v1/', :module => "api_v1", :as => 'v1', :defaults => { :format => :json } do
 
     post "login" => "auth#login"
@@ -48,6 +51,10 @@ Rails.application.routes.draw do
 
   root 'topics#index'
 
+
+  scope :path => '/api/v1/', :module => "api_v1", :as => 'v1', :defaults => { :format => :json } do
+   resources :topics
+  end
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
@@ -96,4 +103,8 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+
+
+
 end
