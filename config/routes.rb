@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   get "/api/v1/coffeeshop/all" => "api_v1/coffeeshops#all"
   post "/api/v1/coffeeshop/update" => "api_v1/coffeeshops#update"
+  post "/api/v1/coffeeshop/showjson" => "api_v1/coffeeshops#showjson"
+  get "/api/v1/coffeeshop/show4square" => "api_v1/coffeeshops#show4square"
 
   scope :path => '/api/v1/', :module => "api_v1", :as => 'v1', :defaults => { :format => :json } do
 

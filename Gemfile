@@ -12,10 +12,10 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
+gem 'faraday'
 gem 'ransack'
 gem 'nested_form_fields'
-
+gem 'httparty'
 gem "select2-rails"
 
 gem "paperclip"
